@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:background="#e4e4e4"-->
+    <!-->-->
+    <!--</View>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:id="@+id/parentLinearLayout"
+        android:weightSum="11.5"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="11.5"
+            android:id="@+id/articleChildLinearLayout"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="#000000"
+                android:id="@+id/rl_imageOverlay"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/iv_articleImage"
+                    android:scaleType="centerCrop"
+                    android:alpha="0.7"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:id="@+id/childRelativeLayout">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Events"
+                        android:textSize="12sp"
+                        android:id="@+id/tv_category"
+                        android:textColor="#a8a8a8"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="4dp"
+                        android:layout_alignParentTop="true"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_title"
+                        android:textSize="18sp"
+                        android:textColor="#000000"
+                        android:ellipsize="end"
+                        android:maxLines="4"
+                        android:layout_below="@+id/tv_category"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        />
+                </RelativeLayout>
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="80dp"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_alignParentStart="true">-->
+
+                    <!--<Button-->
+                        <!--android:layout_width="70dp"-->
+                        <!--android:layout_height="25dp"-->
+                        <!--android:text="+ Add"-->
+                        <!--android:id="@+id/addButton"-->
+                        <!--android:layout_alignParentBottom="true"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_alignParentEnd="true"-->
+                        <!--android:layout_marginBottom="8dp"-->
+                        <!--android:background="@drawable/button_border_layout"-->
+                        <!--android:textColor="#7fd0d7"-->
+                        <!--android:textSize="12sp"-->
+                        <!--android:layout_marginRight="5dp"-->
+                        <!--android:layout_marginEnd="5dp"/>-->
+
+                    <!--<Button-->
+                        <!--android:layout_width="70dp"-->
+                        <!--android:layout_height="25dp"-->
+                        <!--android:text="Share"-->
+                        <!--android:id="@+id/shareButton"-->
+                        <!--android:layout_alignParentBottom="true"-->
+                        <!--android:layout_marginBottom="8dp"-->
+                        <!--android:layout_toLeftOf="@+id/addButton"-->
+                        <!--android:background="@drawable/button_border_layout"-->
+                        <!--android:textColor="#7fd0d7"-->
+                        <!--android:textSize="12sp"-->
+                        <!--android:layout_marginRight="5dp"-->
+                        <!--android:layout_marginEnd="5dp"-->
+                        <!--android:layout_alignBaseline="@+id/addButton"-->
+                        <!--/>-->
+                <!--</RelativeLayout>-->
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="#e4e4e4"-->
+            <!--android:layout_alignParentBottom="true">-->
+            <!--</View>-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="2.5"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:weightSum="9"-->
+        <!--android:background="#f9f9f9"-->
+        <!-->-->
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="3"-->
+        <!--android:layout_margin="1dp"-->
+        <!--android:id="@+id/rl_status"-->
+        <!--android:clickable="true"-->
+        <!--android:background="#f9f9f9"-->
+        <!-->-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="23 going"-->
+        <!--android:textSize="12sp"-->
+        <!--android:textColor="#00a1b0"-->
+        <!--android:background="@null"-->
+        <!--android:id="@+id/tv_statusGoing"-->
+        <!--android:layout_marginLeft="3dp"-->
+        <!--android:layout_marginRight="3dp"-->
+        <!--android:layout_marginTop="3dp"-->
+        <!--android:layout_marginBottom="1dp"-->
+
+        <!--/>-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="14 been Here"-->
+        <!--android:textSize="12sp"-->
+        <!--android:textColor="#00a1b0"-->
+        <!--android:background="@null"-->
+        <!--android:id="@+id/tv_statusBeenHere"-->
+        <!--android:layout_below="@+id/tv_statusGoing"-->
+        <!--android:layout_marginLeft="3dp"-->
+        <!--android:layout_marginRight="3dp"-->
+        <!--android:layout_marginBottom="3dp"-->
+
+        <!--/>-->
+        <!--</RelativeLayout>-->
+
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="3"-->
+        <!--android:layout_margin="1dp"-->
+        <!--android:layout_marginBottom="2dp"-->
+        <!--android:background="#f9f9f9"-->
+
+        <!-->-->
+
+        <!--<Button-->
+        <!--android:layout_width="30dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:id="@+id/ib_beenHere"-->
+        <!--android:textSize="16sp"-->
+        <!--android:textColor="#a8a8a8"-->
+        <!--android:background="@null"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="4dp"-->
+        <!--android:layout_marginStart="4dp"-->
+        <!--/>-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Been Here"-->
+        <!--android:textSize="16sp"-->
+        <!--android:textColor="#a8a8a8"-->
+        <!--android:background="@null"-->
+        <!--android:layout_marginLeft="4dp"-->
+        <!--android:layout_marginStart="4dp"-->
+        <!--android:id="@+id/tv_beenHere"-->
+        <!--android:layout_toRightOf="@+id/ib_beenHere"-->
+        <!--android:layout_centerVertical="true"/>-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="1dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical"-->
+        <!--android:background="#FFFFFF">-->
+        <!--</LinearLayout>-->
+
+        <!--</RelativeLayout>-->
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="3"-->
+        <!--android:layout_margin="1dp"-->
+        <!--android:background="#f9f9f9"-->
+
+
+        <!-->-->
+        <!--<Button-->
+        <!--android:layout_width="35dp"-->
+        <!--android:layout_height="35dp"-->
+        <!--android:id="@+id/ib_doThat"-->
+        <!--android:textSize="16sp"-->
+        <!--android:textColor="#a8a8a8"-->
+        <!--android:background="@null"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="4dp"-->
+        <!--android:layout_marginStart="4dp"-->
+        <!--/>-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Do that"-->
+        <!--android:textSize="16sp"-->
+        <!--android:textColor="#a8a8a8"-->
+        <!--android:background="@null"-->
+        <!--android:id="@+id/tv_doThat"-->
+        <!--android:layout_marginLeft="4dp"-->
+        <!--android:layout_marginStart="4dp"-->
+        <!--android:layout_toRightOf="@+id/ib_doThat"-->
+        <!--android:layout_centerVertical="true"/>-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="1dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical"-->
+        <!--android:background="#ffffff">-->
+        <!--</LinearLayout>-->
+
+        <!--</RelativeLayout>-->
+        <!--</LinearLayout>-->
+    </LinearLayout>
+
+
+</LinearLayout>
